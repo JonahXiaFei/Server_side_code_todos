@@ -11,7 +11,6 @@ const createTable = `
     date DATETIME NOT NULL
   )
 `;
-
 db.exec(createTable);
 // close
 db.close();

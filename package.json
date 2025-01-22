@@ -7,8 +7,8 @@
     "start": "nodemon server/server.js"
   },
   "keywords": [],
-  "type": "module",
   "author": "",
+  "type": "module",
   "license": "ISC",
   "description": "",
   "dependencies": {

@@ -87,6 +87,7 @@ app.patch("/api/todos/:id", (req, res) => {
       msg: "Please provide at least one field to update: title, description, priority, or date.",
     });
   }
+
   const newTitle = title || queryToDos.title;
   const newDescription = description || queryToDos.description;
   const newPriority = priority || queryToDos.priority;
