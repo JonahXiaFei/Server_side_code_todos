@@ -12,6 +12,7 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.send("Hello Word");
 });
+
 app.get("/api/todos", (req, res) => {
   let query = `SELECT * FROM todos`;
   const sort = req.query.sort;

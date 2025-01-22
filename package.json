@@ -7,10 +7,10 @@
     "start": "nodemon server/server.js"
   },
   "keywords": [],
+  "type": "module",
   "author": "",
   "license": "ISC",
   "description": "",
-  "type": "module",
   "dependencies": {
     "better-sqlite3": "^11.8.1",
     "cors": "^2.8.5",

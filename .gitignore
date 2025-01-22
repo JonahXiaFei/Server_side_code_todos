@@ -7,6 +7,7 @@ node_modules/
 # Environment variables
 .env
 
+
 # Database files
 *.db
 .vscode

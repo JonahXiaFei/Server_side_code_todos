@@ -13,5 +13,5 @@ const createTable = `
 `;
 
 db.exec(createTable);
-
+// close
 db.close();
