@@ -18,4 +18,3 @@ const initializeTable = () => {
 
 initializeTable(); // Call to ensure the table exists
 // close
-db.close();
