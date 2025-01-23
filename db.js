@@ -13,7 +13,7 @@ const initializeTable = () => {
     date DATETIME NOT NULL
   )
 `;
-  db.prepare(createTableQuery).run();
+  db.prepare(createTable).run();
 };
 
 initializeTable(); // Call to ensure the table exists
