@@ -2,7 +2,9 @@ import Database from "better-sqlite3";
 
 const db = new Database("ToDo.db");
 
-const createTable = `
+// Initialize the todos table if it doesn't exist
+const initializeTable = () => {
+  const createTable = `
   CREATE TABLE IF NOT EXISTS todos (
     id INTEGER PRIMARY KEY,
     title TEXT NOT NULL,
@@ -11,6 +13,9 @@ const createTable = `
     date DATETIME NOT NULL
   )
 `;
-db.exec(createTable);
+  db.prepare(createTableQuery).run();
+};
+
+initializeTable(); // Call to ensure the table exists
 // close
 db.close();
