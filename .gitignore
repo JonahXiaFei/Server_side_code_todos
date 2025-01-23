@@ -8,5 +8,5 @@ node_modules/
 .env
 
 # Database files
-*.db
+
 .vscode
