@@ -7,8 +7,11 @@ env.config();
 const db = new Database("ToDo.db");
 const app = express();
 app.use(express.json());
-app.use(cors());
-
+app.use(
+  cors({
+    origin: "https://client-side-todos.onrender.com/", // Specify frontend URL
+  })
+);
 app.get("/", (req, res) => {
   res.send("Hello Word");
 });
