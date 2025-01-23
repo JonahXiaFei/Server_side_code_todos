@@ -9,9 +9,11 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://client-side-todos.onrender.com/", // Specify frontend URL
+    origin: "https://client-side-todos.onrender.com", // Allow only this domain
+    methods: ["GET", "POST", "PATCH", "DELETE"], // Specify allowed methods
   })
 );
+
 app.get("/", (req, res) => {
   res.send("Hello Word");
 });
